@@ -35,9 +35,9 @@
   <img src="images/illustration-dashboard.png" class="image"></img>
 </div>
 <div class="logo-lic">
-  <button class="brand"><i class="fab fa-facebook-f fa=5x"></i></button>
-  <button class="brand"><i class="fab fa-twitter fa=2x"></i></button>
-  <button class="brand"><i class="fab fa-instagram fa=2x"></i></button><br>
+  <button class="brand" id="brand1"><i class="fab fa-facebook-f fa=5x"></i></button>
+  <button class="brand" id="brand2"><i class="fab fa-twitter fa=2x"></i></button>
+  <button class="brand" id="brand3"><i class="fab fa-instagram fa=2x"></i></button><br>
 
   <p>&copy; Copyright Ping. All rights reserved.</p>
 </div>
@@ -57,6 +57,10 @@
       email.setAttribute('placeholder','example@email/com');
       email.style.border = "1px solid red";
       emailmsg.style.display = "block";
+    }
+    for (i=1;i<4;i++) {
+      var brands = document.getElementById("brand"+i);
+      brands.style.margin="18px 5px";
     }
   }
 </script>
