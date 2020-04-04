@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- External CSS Files -->
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Font Awesome link-->
+  <script src="https://kit.fontawesome.com/6baf49cd15.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <!-- External Font Family -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <main class="main-content">
+  
+<div class="logo">
+  <img src="images/logo.svg" alt="logo"></img>
+</div>
+  <h1 class="heading"><span class="faint">We are launching</span> soon!</h1>
+
+  <h2 class="sub-head">Subscribe and get notified</h2>
+  <div id="form1">
+<div class="form">
+  <input type="email" placeholder="Your email address" class="email" id="email" name="email" aria-label="true" />
+  <p id="error-msg"><em>Please provide a valid email address.</em></p>
+</div>
+<div class="notify">
+  <button class="notifyme" onmouseover="error()"><strong>Notify Me</strong></button></div><br>
+</div>
+  <div class="img-div">
+  <img src="images/illustration-dashboard.png" class="image"></img>
+</div>
+<div class="logo-lic">
+  <button class="brand"><i class="fab fa-facebook-f fa=5x"></i></button>
+  <button class="brand"><i class="fab fa-twitter fa=2x"></i></button>
+  <button class="brand"><i class="fab fa-instagram fa=2x"></i></button><br>
+
+  <p>&copy; Copyright Ping. All rights reserved.</p>
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Akshaykumar Magrani.</a>.
+    </p>
+  </footer>
+</main>
+</body>
+<script>
+  function error() {
+    var email = document.getElementById("email");
+    var emailmsg = document.getElementById("error-msg");
+    if (email.value == '') {
+      email.setAttribute('placeholder','example@email/com');
+      email.style.border = "1px solid red";
+      emailmsg.style.display = "block";
+    }
+  }
+</script>
+</html>
